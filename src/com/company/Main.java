@@ -155,8 +155,7 @@ public class Main {
         if (keyboard.nextLine().equalsIgnoreCase("y")) {
             m = model.viewManager(id);
             System.out.println("************PRINTING MANAGER DETAILS **************\n\n" + m.toString());
-        }
-        else {
+        } else {
             m = model.viewManagerSolo(id);
             System.out.println("************PRINTING MANAGER DETAILS **************\n\n" + m.toStringSolo());
         }
@@ -298,7 +297,7 @@ public class Main {
                     if (model.deleteEProduct(id)) {
                         System.out.println("\nElectrical Product deleted");
                     } else {
-                        System.out.println("\nElectrical Product not deleted, check your database to see if a programmer with this ID actually exists");
+                        System.out.println("\nElectrical Product not deleted, check your database to see if a Product with this ID actually exists");
                     }
                     break;
                 } else {
@@ -319,7 +318,7 @@ public class Main {
                     if (model.deleteSProduct(id)) {
                         System.out.println("\nSeasonal Product deleted");
                     } else {
-                        System.out.println("\nSeasonal Product not deleted, check your database to see if a programmer with this ID actually exists");
+                        System.out.println("\nSeasonal Product not deleted, check your database to see if a Product with this ID actually exists");
                     }
                     break;
                 } else {
